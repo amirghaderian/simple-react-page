@@ -13,7 +13,7 @@ import {
 import AddIcon from "@mui/icons-material/Add";
 import { useState } from "react";
 import {
-    DateRange,
+  DateRange,
   EmojiEmotions,
   Image,
   PersonAdd,
@@ -46,7 +46,8 @@ const Add = () => {
         <Box
           width={400}
           height={350}
-          bgcolor="rgb(255,255,255)"
+          bgcolor={"background.default"}
+          color={"text.secondary"}
           p={3}
           borderRadius={"7px"}
         >
@@ -84,10 +85,12 @@ const Add = () => {
           <ButtonGroup
             variant="contained"
             aria-label="outlined primary button group"
-            sx={{ml:"170px",mt:"30px",width:"200px"}}
-                      >
-            <Button sx={{width:"125px"}}>Post</Button>
-            <Button  sx={{width:"75px"}}><DateRange/></Button>
+            sx={{ ml: "170px", mt: "30px", width: "200px" }}
+          >
+            <Button sx={{ width: "125px" }}>Post</Button>
+            <Button sx={{ width: "75px" }}>
+              <DateRange />
+            </Button>
           </ButtonGroup>
         </Box>
       </Modal>
