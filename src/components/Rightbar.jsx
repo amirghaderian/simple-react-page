@@ -82,7 +82,7 @@ const Rightbar = () => {
           />
         </AvatarGroup>
         <Typography variant="h6" mt={2} mb={2}>Latest photos</Typography>
-        <ImageList sx={{  height: "80vh" ,}} cols={1}   gap={10}>
+        <ImageList sx={{  height: "80vh" ,}} cols={1} gap={10}>
           {itemData.map((item) => (
             <ImageListItem sx={{  }} key={item.img}>
               <img 
@@ -94,6 +94,7 @@ const Rightbar = () => {
             </ImageListItem>
           ))}
         </ImageList>
+        
       </Box>
     </Box>
   );
